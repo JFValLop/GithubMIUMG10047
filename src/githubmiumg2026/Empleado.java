@@ -85,4 +85,8 @@ public class Empleado {
     }
     
     
+    
+    public void calcularSuma(){
+        int suma = 1;
+    }
 }
