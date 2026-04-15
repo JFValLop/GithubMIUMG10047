@@ -13,12 +13,14 @@ public class Empleado {
     private String nombre;
     private String apellido;
     private String direccion;
+    private int salario;
 
     public Empleado() {
         this.id = 0;
         this.nombre = "";
         this.apellido = "";
         this.direccion = "";
+        this.salario = 0;
     }
 
     public Empleado(int id, String nombre, String apellido, String direccion) {
@@ -26,6 +28,7 @@ public class Empleado {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
+        this.salario = 25000;
     }
 
     /**
@@ -88,5 +91,13 @@ public class Empleado {
     
     public void calcularSuma(){
         int suma = 1;
+    }
+    
+    public void calcularsalario(){
+        if (salario<20000){
+            System.out.println("Gana poco");
+        }else{
+            System.out.println("Gana mucho");
+        }
     }
 }
